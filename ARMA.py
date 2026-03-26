@@ -58,7 +58,7 @@ if __name__ == "__main__":
         # Torniamo alla scala originale
         y_pred = np.exp(y_log_pred)
 
-        plt.figure("Confronto finale - ARIMA", figsize=(10, 6))
+        plt.figure("Confronto finale - ARMA", figsize=(10, 6))
         plt.plot(y, label="Actual")
         # Non mostrare i primi 12 punti previsionali (spesso instabili/null)
         plt.plot(range(12, len(y)), y_pred[12:len(y)], label="Prediction")
